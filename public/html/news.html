@@ -1,0 +1,46 @@
+<section id="cd-team" class="cd-section">
+
+  <div class="cd-container">
+
+    <form autocomplete="off" accept-charset="UTF-8">
+      <input type="search" id="search" maxlength=26 placeholder="Filtrar noticias"
+      ng-model="search.title" ng-model-options="{ updateOn : 'search' }">
+    </form>
+
+    <ul id="geekmox-box-news-cards" infinite-scroll-container='"main.cd-main-content"' infinite-scroll-parent='true' infinite-scroll-listen-for-event='filter:itemData' infinite-scroll-distance='1' infinite-scroll='loadMore()'>
+
+      <li class="geekmox-news-card geekmox-sponsor-card">
+        <div class="geekmox-box-aside">
+          <aside>
+            <adsense
+              inline-style="display:block"
+              ad-client="ca-pub-9611163340077860"
+              ad-slot="7331727831"
+              ad-format="auto">
+            </adsense>
+          </aside>
+        </div>
+      </li>
+
+      <li class="geekmox-news-card" ng-repeat="item in itemData | orderBy:'-order' | limitTo:899 | filter:search as results track by item.order">
+        <a ng-href="/news/{{item.id}}">
+            <div class="geekmox-news-cover" style="
+              background: url('{{item.images[0]}}') no-repeat center center;
+              background-size: cover;
+              background-color: rgba(0,0,0, 0.50);
+            ">
+            <time am-time-ago="item.date | amParse:'DD/MM/YYYY h:mm:ss a'"></time>
+            </div>
+          <div class="cd-news-info"><h1>{{item.title}}</h1><p>{{item.description}}</p></div>
+        </a>
+      </li>
+
+      <span class="geekmox-box-news-cards-message" ng-if="results.length==0">No hay resultados...</span>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- updateMeta -->
+<update-title title="geekmox.com | Noticias"></update-title>

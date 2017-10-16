@@ -1,0 +1,16 @@
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|Twitterbot|Pinterest|Flipboard|Bingbot|MSNBot|Applebot|PocketParser|Feedly|Slackbot-LinkExpanding|DuckDuckBot|LinkedInBot|Telegram|WhatsApp|Google.*snippet)
+    RewriteRule ^news/([-._a-z0-9]+)$ http://geekmox.com/php/crawler.php?id=$1 [NC,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !index
+    RewriteRule (.*) index.html [L]
+
+</ifModule>
+
+<ifModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</ifModule>

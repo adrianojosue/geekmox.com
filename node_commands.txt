@@ -1,0 +1,7 @@
+Comando para instalar las dependencias:
+
+npm install
+
+Comando para iniciar el servidor Express:
+
+npm start

@@ -1,0 +1,16 @@
+{
+    "short_name": "geekmox.com",
+    "name": "geekmox.com",
+    "start_url": "/",
+    "theme_color": "#47484b",
+    "background_color": "#1d1f21",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "png/app-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

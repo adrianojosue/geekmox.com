@@ -1,0 +1,17 @@
+{
+  "name": "geekmox.com",
+  "version": "0.5.7",
+  "description": "Noticias sobre tecnología, ciencia, videojuegos y todo lo que nos gusta a los geeks en una interfaz agradable, minimalista y fácil de utilizar.",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "~4.16.2"
+  },
+  "devDependencies": {
+    "nodemon": "~1.12.1"
+  }
+}

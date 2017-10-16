@@ -1,0 +1,52 @@
+<section id="cover" style="
+
+  background: url('{{item.images[0]}}') no-repeat center center !important;
+  background-size: cover !important;
+  background-color: #3c3f41 !important;
+
+">
+<time am-time-ago="item.date | amParse:'DD/MM/YYYY h:mm:ss a'"></time>
+</section>
+
+<section id="cd-team" class="cd-section">
+  <div class="cd-container">
+
+    <article>
+      <div class="box-aside">
+        <aside>
+          <adsense
+            inline-style="display:block"
+            ad-client="ca-pub-9611163340077860"
+            ad-slot="5303249033"
+            ad-format="auto">
+          </adsense>
+        </aside>
+      </div>
+    </article>
+
+    <article ng-bind-html="item.content | filterHtml" itemscope itemtype="http://schema.org/Article">
+      
+    </article>
+    
+    <article ng-controller="dirDisqusCtrl">
+      Comentarios desactivados <br> (temporalmente)
+      <!--<dir-disqus config="disqusConfig"></dir-disqus>-->
+    </article>
+
+  </div>
+</section>
+
+<!-- updateMeta -->
+<update-title title="geekmox.com | {{item.title}}"></update-title>
+<update-link rel="canonical" href="http://geekmox.com/news/{{item.id}}"></update-link>
+<update-meta name="description" content="{{item.description}}"></update-meta>
+<update-meta property="og:type" content="article"></update-meta>
+<update-meta property="og:title" content="{{item.title}}"></update-meta>
+<update-meta itemprop="og:headline" content="{{item.title}}"></update-meta>
+<update-meta property="og:description" content="{{item.description}}"></update-meta>
+<update-meta itemprop="og:description" content="{{item.description}}"></update-meta>
+<update-meta property="og:url" content="http://geekmox.com/news/{{item.id}}"></update-meta>
+<update-meta property="og:image" content="http://geekmox.com/{{item.images[0]}}"></update-meta>
+<update-meta name="twitter:title" content="{{item.title}}"></update-meta>
+<update-meta name="twitter:description" content="{{item.description}}"></update-meta>
+<update-meta property="twitter:image" content="http://geekmox.com/{{item.images[0]}}"></update-meta>

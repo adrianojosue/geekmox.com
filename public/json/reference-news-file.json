@@ -1,0 +1,99 @@
+{
+  "order": 0,
+  "id": "",
+  "category": [
+    "Category 1",
+    "Category 2"
+  ],
+  "images": [
+    "http://geekmox.com/jpg/.0.jpg",
+    "http://geekmox.com/jpg/.1.jpg",
+    "http://geekmox.com/jpg/.2.jpg"
+  ],
+  "date": "00/00/2017 00:00:00 a.m.",
+  "title": "",
+  "description": "",
+  
+  "content": "<h1></h1><p></p><p>Vía | <a href=\"\" target=\"_blank\"></a></p><p>Fuente | <a href=\"\" target=\"_blank\"></a></p>"
+}
+
+/*
+----------------------------------------------------------------------------------------------------
+Categorías:
+ -Tecnología
+ -Ciencia
+ -Videojuego
+ -Curiosidad
+ -Hardware
+ -Software
+ -Cine y TV
+ -Serie
+ -Gadget
+ -Rumor
+ -Smartphone
+ -Filtración
+ -Presentación
+ -PC
+ -Videoconsola
+ -Evento
+----------------------------------------------------------------------------------------------------
+*/
+
+/*
+----------------------------------------------------------------------------------------------------
+Etiquetas HTML que puedes utilizar en "content":
+ - No puedes dejar espacios entre etiquetas HTML pero si dentro de ellas
+
+Título:
+ - Puedes utilizar la etiqueta de <mark>marcado</mark> dentro de la de <h1>Título</h1>
+
+<h1>Title</h1>
+
+Parrafos:
+ - Puedes utilizar etiquetas para <a>enlaces</a>, <strong>fuerza</strong> y <mark>marcado</mark> dentro de la etiqueta de <p>parrafo</p>
+
+<p>Paragraph</p>
+
+Enlaces:
+<a href=\"\" target=\"_blank\"></a> <-Enlace externo
+<a href=\"/news/id/sponsor\"></a> <-Enlace interno
+
+Texto Marcado:
+<mark></mark>
+
+Texto Subrayado:
+<del></del>
+
+Texto fuerte:
+<strong></strong>
+
+Tabla:
+ - Está es una tabla de 2 columnas y 2 filas
+
+<table><thead><tr><th scope=\"col\" colspan=\"2\"></th></tr></thead><tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+
+Imágenes:
+<p><img src=\"http://geekmox.com/jpg/.1.jpg\" alt=\"La imagen fue eliminada o no está disponible en este momento.\"></p>
+
+Nota:
+<p style=\"text-align:right!important;padding-bottom:0!important;color:#9e9e9e!important;\"></p>
+
+YouTube vídeos:
+<p class=\"videoWrapper\"><iframe width=\"1280\" height=\"720\" src=\"https://www.youtube.com/embed/\" frameborder=\"0\" scrolling=\"no\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+Vimeo vídeos:
+<p class=\"videoWrapper\"><iframe width=\"1280\" height=\"720\" src=\"https://player.vimeo.com/video/\" frameborder=\"0\" scrolling=\"no\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+
+Cita en bloque:
+<blockquote cite=\"Texto\"><p>\"Texto\"</p></blockquote>
+
+Lista numemara:
+<ol><li><p>Texto</p></li></ol>
+
+Lista con viñetas:
+<ul><li><p><strong>Texto:</strong>...</p></li></ul>
+
+Comentarios:
+—Comentario del redactor—
+----------------------------------------------------------------------------------------------------
+*/

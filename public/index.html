@@ -1,0 +1,183 @@
+<!doctype html>
+<!--
+	© 2016 geekmox.com. All rights reserved.
+-->
+<html lang="es-DO" dir="ltr" class="no-js" ng-app="geekmoxApp" prefix="og: http://ogp.me/ns#">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81489800-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('set', {'user_id': 'USER_ID'});
+		gtag('config', 'UA-81489800-1');
+	</script>
+	<!-- Global site tag (adsbygoogle.js) - Google AdSense -->
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-9611163340077860",
+			enable_page_level_ads: true
+		});
+	</script>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="referrer" content="origin">
+	<meta name="robots" content="index, follow, notranslate">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="theme-color" content="#3c3f41">
+	<meta name="apple-mobile-web-app-title" content="geekmox.com">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="application-name" content="geekmox.com">
+	<meta name="msapplication-TileColor" content="#1d1f21">
+	<meta name="msapplication-TileImage" content="png/app-icon.png">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="msapplication-starturl" content="/">
+	<meta property="fb:app_id" content="580965375393121">
+	<meta property="og:site_name" content="geekmox.com">
+  	<meta property="og:type" content="website">
+  	<meta property="og:title" content="geekmox.com">
+	<meta itemprop="og:headline" content="geekmox.com">
+  	<meta property="og:description" content="Noticias sobre tecnología, ciencia, videojuegos y todo lo que nos gusta a los geeks en una interfaz agradable, minimalista y fácil de utilizar.">
+	<meta itemprop="og:description" content="Noticias sobre tecnología, ciencia, videojuegos y todo lo que nos gusta a los geeks en una interfaz agradable, minimalista y fácil de utilizar.">
+  	<meta property="og:url" content="http://geekmox.com/news">
+  	<meta property="og:image" content="http://geekmox.com/jpg/geekmox-og-cover.0.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@geekmox">
+	<meta name="twitter:title" content="geekmox.com">
+	<meta name="twitter:description" content="Noticias sobre tecnología, ciencia, videojuegos y todo lo que nos gusta a los geeks en una interfaz agradable, minimalista y fácil de utilizar.">
+	<meta property="twitter:image" content="http://geekmox.com/jpg/geekmox-og-cover.0.jpg">
+	<link rel="canonical" href="http://geekmox.com/news">
+  	<link rel="apple-touch-icon" sizes="192x192" href="png/app-icon.png">
+	<link rel="apple-touch-startup-image" media="(orientation: landscape)" href="png/app-icon.png">
+	<link rel="apple-touch-startup-image" media="(orientation: portrait)" href="png/app-icon.png">
+	<link rel="icon" sizes="192x192" href="png/app-icon.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script async src="js/modernizr.js"></script>
+  	<script async src="js/pace.min.js"></script>
+	<title>geekmox.com</title>
+	<style type="text/css">
+  	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    	display: none !important;
+    }
+  </style>
+</head>
+
+<body dir="ltr" ng-cloak>
+
+	<header>
+    <span id="cd-logo" ng-controller="titleCtrl"><a ng-href="/" id="cd-logo-icon"></a>{{pageTitle}}</span>
+		<reload-component></reload-component>
+		<a id="cd-menu-trigger" href="#"><span class="cd-menu-icon"></span></a>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="view-container">
+				<ng-view></ng-view>
+		</div>
+	</main>
+
+	<nav id="cd-lateral-nav" ng-controller="activeNavCtrl">
+		<ul class="cd-navigation">
+			<li class="item-has-children">
+				<a class="current" href="#">Secciones</a>
+				<ul class="sub-menu">
+					<li><a ng-href="/news" ng-class="{active: isActive('/news')}">Noticias</a></li>
+          <li><a ng-href="/services." ng-class="{active: isActive('/services')}">Servicios</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="cd-navigation">
+			<li class="item-has-children">
+				<a class="current" href="#">Información</a>
+				<ul class="sub-menu">
+					<li><a ng-href="/about." ng-class="{active: isActive('/about')}">Acerca de...</a></li>
+		      <li><a ng-controller="addressCtrl" ng-href="mailto:{{address}}" target="_blank">Contacto</a></li>
+		      <li><a class="paypal" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TK68SKB3CRD52" target="_blank">Donaciones</a></li>
+					<li><a ng-href="/cookies-policy" ng-class="{active: isActive('/cookies-policy')}">Política de cookies</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<div class="cd-navigation socials">
+			<a class="cd-twitter cd-img-replace" href="https://twitter.com/geekmox" target="_blank"></a>
+			<a class="cd-facebook cd-img-replace" href="https://facebook.com/geekmox" target="_blank"></a>
+			<a class="cd-instagram cd-img-replace" href="https://instagram.com/geekmox" target="_blank"></a>
+		</div>
+
+    <ul class="cd-navigation cd-single-item-wrapper">
+      <li><a id="copyright">© 2016 geekmox.com</a></li>
+      <li><a id="version">Versión: 0.5.7 <span>BETA</span> </a></li>
+    </ul>
+	</nav>
+
+	<newsbutton-component></newsbutton-component>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/angular-resource.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-aria.min.js"></script>
+<script src="js/angular-messages.min.js"></script>
+<script src="js/angular-material.min.js"></script>
+<script src="js/ng-infinite-scroll.min.js"></script>
+<script src="js/angular-locale_es-do.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment-locale_es-do.js"></script>
+<script src="js/angular-moment.min.js"></script>
+<script src="js/update-meta.min.js"></script>
+<script src="js/dirDisqus.js"></script>
+<script src="js/main.js"></script>
+<script src="js/angular-google-adsense.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/push.min.js"></script>
+
+<!-- Facebook SDK for JavaScript -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '580965375393121',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Push notification: Cookies Policy -->
+<script>
+	var notificationCookiesPolicyDisplayed = window.localStorage.getItem('notificationCookiesPolicyDisplayed');
+	if(!notificationCookiesPolicyDisplayed){
+		Push.create('Política de Cookies',{
+    	body: 'Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias. Al acceder a geekmox.com, consideramos que acepta su uso.',
+    	icon: 'png/app-icon.png',
+		vibrate: '200',
+    	onClick: function () {
+        window.location = 'http://geekmox.com/cookies-policy';
+        this.close();
+    	}
+  	});
+		window.localStorage.setItem('notificationCookiesPolicyDisplayed', true);
+	}
+</script>
+
+</body>
+</html>
