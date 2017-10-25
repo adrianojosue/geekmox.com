@@ -2,7 +2,7 @@
   "name": "geekmox.com",
   "version": "0.5.7",
   "description": "Noticias sobre tecnología, ciencia, videojuegos y todo lo que nos gusta a los geeks en una interfaz agradable, minimalista y fácil de utilizar.",
-  "license": "UNLICENSED",
+  "license": "Apache License 2.0",
   "private": true,
   "main": "server.js",
   "scripts": {
