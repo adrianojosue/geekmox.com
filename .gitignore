@@ -1,8 +1,8 @@
 # Created by https://www.gitignore.io/api/node,macos,windows,visualstudiocode
 
 ### geekmox.com ###
-public/jpg/
-public/json/
+public/jpg/*.jpg
+public/json/*.json
 
 ### macOS ###
 *.DS_Store
