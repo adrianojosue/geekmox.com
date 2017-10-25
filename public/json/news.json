@@ -1,5 +1,35 @@
 [
   {
+    "order": 380,
+    "id": "steve-wozniak-el-iphone-x-sera-el-primer-iphone-que-no-compre-al-momento-de-su-lanzamiento",
+    "category": [
+      "Tecnología",
+      "Smartphone",
+      "Curiosidad"
+    ],
+    "images": [
+      "http://geekmox.com/jpg/steve-wozniak-el-iphone-x-sera-el-primer-iphone-que-no-compre-al-momento-de-su-lanzamiento.0.jpg"
+    ],
+    "date": "25/10/2017 02:30:00 a.m.",
+    "title": "Steve Wozniak: \"[...], el iPhone X será el primer iPhone que no compre al momento de su lanzamiento.\"",
+    "description": "Sí, el mismísimo cofundador de Apple, Steve Wozniak, esta vez no hará fila para adquirir un nuevo dispositivo de Apple. Ésto lo afirma a través de una entrevista con el medio de comunicación CNBC, en la cual comentó que no comprará de momento el nuevo iPhone X. ¿Será por el Face ID? Wozniak cree que el reconocimiento facial funcionará bien, a pesar del \"traspié\" que vimos en el evento de Apple, donde el Face ID no reconoció el rostro de Craig Federighi..."
+  },
+  {
+    "order": 379,
+    "id": "razer-kiyo-asi-es-la-nueva-camara-con-anillo-de-luz-para-streamers-de-razer",
+    "category": [
+      "Tecnología",
+      "Gadget",
+      "PC"
+    ],
+    "images": [
+      "http://geekmox.com/jpg/razer-kiyo-asi-es-la-nueva-camara-con-anillo-de-luz-para-streamers-de-razer.0.jpg"
+    ],
+    "date": "23/10/2017 08:00:00 p.m.",
+    "title": "Razer Kiyo: así es la nueva cámara con anillo de luz para streamers de Razer",
+    "description": "Los streamers están de enhorabuena, y es que Razer ha lanzado un gadget de lo más singular, la Razer Kiyo: se trata de una cámara para PCs enfocada a los que se dedican a hacer streaming mediante YouTube u otra plataforma similar. La Razer Kiyo busca que sus usuarios se vean lo mejor posible gracias a la integración de un anillo de luz que permite ajustar la intensidad, y además permite streaming en 720p @ 60 FPS o 1080p @ 30 FPS..."
+  },
+  {
     "order": 378,
     "id": "di-hola-al-futuro-asi-desvela-apple-su-nuevo-iphone-x",
     "category": [

@@ -2,8 +2,8 @@
     "short_name": "geekmox.com",
     "name": "geekmox.com",
     "start_url": "/",
-    "theme_color": "#47484b",
-    "background_color": "#1d1f21",
+    "theme_color": "#3c3f41",
+    "background_color": "#47484b",
     "display": "standalone",
     "orientation": "portrait",
     "icons": [

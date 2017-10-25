@@ -133,7 +133,7 @@
 
   // newsCtrl
   geekmoxApp.controller('newsCtrl', ['$scope','$window','$rootScope','DataSource', function($scope,$window,$rootScope,DataSource){
-    DataSource.get('../json/news.json', function(data){
+    DataSource.get('http://geekmox.com/json/news.json', function(data){
       $scope.itemData = data.slice(0,11);
       $scope.itemsData = data;
       $scope.selected = data[0];

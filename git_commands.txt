@@ -1,0 +1,85 @@
+Comando para agregar o editar tu username en Git:
+
+    git config --global user.name "tu username/tu nuevo username"
+
+Comando para ver tu username en Git:
+
+    git config --global user.name
+
+Comando para agregar o editar tu email en Git:
+
+    git config --global user.email "tuemail@tuemail.com/tunuevoemail@tunuevoemail.com"
+
+Comando para ver tu email en Git:
+
+    git config --global user.email
+
+Comando para activar o desactivar (true/false) tu configuración de color en Git:
+    git config --global color.ui true
+
+Comando para ver tu configuración de Git:
+    git config --global --list
+
+Comando para iniciar Git en tu proyecto:
+
+    git init
+
+Comando para ver el estado de tu proyecto:
+
+    git status
+
+Comando para agregar a Git todos los archivos de tu proyecto:
+
+    git add -A
+
+Comando para agregar a Git archivos por separado de tu proyecto:
+
+    git add ejemplo.js
+
+Comando para realizar un commit, o sea, para guardar los cambios de tu proyecto en Git:
+
+    git commit -m "Escribe aquí una descripción del cambio que hiciste en tu proyecto"
+
+Comando para ver una lista de todos los commits que has realizado en tu proyecto:
+
+    git log
+
+Comando para ver una lista de todas las ramas que tienes en tu proyecto:
+    git branch
+
+Comando para crear una rama:
+    git branch nombre-de-la-rama
+
+Comando para viajar entre tus commits o ramas:
+
+    git checkout aquí-va-el-código-SHA-del-commit-o-el-nombre-de-la-rama
+
+Comando para viajar al último commit de tu rama:
+
+    git checkout master
+
+Comando para eliminar un commit de tu proyecto sin eliminar tu código:
+
+    git reset --soft aquí-va-el-código-SHA-del-commit
+
+Comando para eliminar un commit de tu proyecto eliminando también tu código:
+
+    git reset --hard aquí-va-el-código-SHA-del-commit
+
+Comando para fusionar una rama con otra (debes de estar situado en la rama que quieres que absorba a la otro):
+    git merge nombre-de-la-rama
+
+Comando para eliminar una rama:
+    git branch -D nombre-de-la-rama
+
+Comando para conectar tu repositorio online con tu repositorio local:
+    git remote add origin aquí-va-la-url-o-key-SSH-de-tu-repositorio-online
+
+Comando para ver si tu repositorio online está conectado con tu repositorio local:
+    git remote -v
+
+Comando para eliminar la conección con tu repositorio online:
+    git remote remove origin
+
+Comando para actualizar nuestro repositorio online (tu repositorio online y local deben de estar conectados):
+    git push -u origin aquí-va-la-rama-que-quieres-subir-o-actualizar
