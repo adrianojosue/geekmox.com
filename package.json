@@ -2,7 +2,7 @@
   "name": "geekmox.com",
   "version": "0.5.7",
   "description": "Noticias sobre tecnología en una interfaz agradable, minimalista y fácil de utilizar.",
-  "license": "Apache License version 2.0",
+  "license": "Apache License Version 2.0",
   "author": "@adrianojosue",
   "private": true,
   "main": "server.js",
