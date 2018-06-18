@@ -133,7 +133,7 @@
 
   // newsCtrl
   geekmoxApp.controller('newsCtrl', ['$scope','$window','$rootScope','DataSource', function($scope,$window,$rootScope,DataSource){
-    DataSource.get('http://geekmox.com/json/news.json', function(data){
+    DataSource.get('http://api.geekmox.com/news', function(data){
       $scope.itemData = data.slice(0,11);
       $scope.itemsData = data;
       $scope.selected = data[0];
@@ -189,7 +189,7 @@
         'Accept': 'application/json, text/javascript',
         'Content-Type': 'application/json; charset=utf-8'
       },
-      url: 'http://geekmox.com/json/news/' + $routeParams.id + '.json'
+      url: 'http://api.geekmox.com/news/' + $routeParams.id
     }).then(function successCallback(response){
         $scope.item = response.data;
     },function errorCallback(response){
